@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Glamore;
+  src: url("./utils/fonts/Glamore.ttf");
+}
+@font-face {
+  font-family: CaviarDreams;
+  src: url("./utils/fonts/CaviarDreams.ttf");
+}
+@font-face {
+  font-family: Edensor;
+  src: url("./utils/fonts/Edensor-Free.otf");
+}
+@font-face {
+  font-family: WilliamNarasi;
+  src: url("./utils/fonts/WilliamNarasi.otf");
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+.p-dropdown .p-dropdown-label.p-placeholder {
+  text-transform: capitalize;
+  color: rgba(128, 128, 128, 0.753) !important;
+}

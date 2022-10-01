@@ -1,0 +1,53 @@
+.card {
+  border: none !important;
+}
+.productorderConatiner {
+  margin-top: 5px;
+  .orderDoneConatiner {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .detailsSection {
+      h4 {
+        color: rgb(11, 170, 11);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+      }
+      .suText {
+        color: rgb(11, 170, 11);
+        font-weight: 550;
+      }
+      .cuName{
+        text-transform: capitalize;
+      }
+      h6{
+        margin: 15px 0;
+        font-weight: 600;
+        
+      }
+      p{
+        margin-left: 10px;
+        span{
+            margin-left: 5px;
+            font-weight: 550;
+        }
+      }
+      button{
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 668px) {
+  .p-steps-title {
+    font-size: 11px;
+  }
+}

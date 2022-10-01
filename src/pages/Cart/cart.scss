@@ -1,0 +1,267 @@
+.cartConatiner {
+  // background: #f5e1b9;
+  background-color: rgba(252, 252, 252, 0.911);
+  height: 100vh;
+  width: 40%;
+  position: fixed;
+  z-index: 1000;
+  right: -800px;
+  transition: 0.8s ease-in-out;
+  font-family: Edensor;
+  .headCart {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    width: 60%;
+    .back {
+      padding-left: 10px;
+      svg {
+        margin-top: 5px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    h1 {
+      font-family: WilliamNarasi;
+    }
+  }
+  .productCardSection {
+    height: 300px;
+    overflow: scroll;
+    padding: 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    .productCartCard {
+      height: 130px;
+      margin: 5px;
+      padding: 5px;
+      display: flex;
+
+      .cartImgConatiner {
+        height: 100%;
+        width: 25%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .cartdeatilsConatiner {
+        margin-left: 20px;
+        letter-spacing: 0.5px;
+        width: 100%;
+        h3 {
+          font-size: 20px;
+          margin: 8px 0;
+        }
+        small {
+          font-size: 18px;
+          margin: -5px 0;
+        }
+        .price {
+          font-size: 22px;
+          letter-spacing: 1px;
+        }
+        .cartRemove {
+          display: flex;
+          .quantityBtn {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            margin: 0 15px;
+            margin-top: 15px;
+            small {
+              margin: 0px 15px;
+            }
+            button {
+              background: #000000;
+              color: white;
+              border: none;
+              border-radius: 0px;
+              width: 40%;
+              font-family: Edensor;
+              font-size: 14px;
+              cursor: pointer;
+              padding: 5px;
+              margin: 0;
+            }
+          }
+          button {
+            background: #000000;
+            color: white;
+            border: none;
+            border-radius: 0px;
+            width: 40%;
+            font-family: Edensor;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+  .cartAdress {
+    height: 150px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    overflow: scroll;
+    .cartAddrescard {
+      margin: 15px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      padding: 10px;
+      input {
+        margin-right: 10px;
+      }
+      h3 {
+        font-size: 15px;
+        margin: 0;
+      }
+    }
+    .cartAddrescardActive {
+      background-color: rgb(15, 15, 15);
+      color: white;
+    }
+  }
+  .totalAmount {
+    padding: 10px;
+    h5 {
+    }
+    dl {
+      padding: 0 20px;
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+      dt,
+      dd {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 2px;
+      }
+      .total {
+        dt,
+        dd {
+          font-weight: 700;
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
+      }
+      // margin-right: 50%;
+    }
+  }
+  .buyBtn {
+    text-align: center;
+    margin-top: 10px;
+    button {
+      background: #000000;
+      color: white;
+      border: none;
+      border-radius: 0px;
+      width: 60%;
+      font-family: Edensor;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}
+.cartActive {
+  right: 0px;
+}
+.buyConatiner {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .buySection {
+    width: 70%;
+    padding: 20px;
+    height: 500px;
+    .selectAddress {
+      height: 300px;
+      overflow: scroll;
+      overflow-x: hidden;
+      .addressSection {
+        width: 95%;
+        padding: 10px;
+        cursor: pointer;
+        margin: 10px 0;
+        // height: 200px;
+        // background: hotpink;
+        border: 1px solid gainsboro;
+        p {
+          margin: 0;
+        }
+      }
+      .selectedAssress {
+        border: 3px solid gainsboro;
+        background: rgba(221, 242, 243, 0.973);
+      }
+    }
+  }
+  .priceSection {
+    width: 30%;
+    height: 500px;
+    dl {
+      padding: 0 20px;
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+      dt,
+      dd {
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+      .total {
+        dt,
+        dd {
+          font-weight: 700;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+      }
+      // margin-right: 50%;
+    }
+    .radioPaymentoption {
+      div {
+        padding: 10px 0;
+        margin: 20px 0;
+        input {
+          margin-right: 10px;
+        }
+        label {
+          margin-right: 10px;
+          font-weight: 600;
+          letter-spacing: .5px;
+        }
+      }
+    }
+    .priceSection {
+      .priceConatiner {
+        position: fixed;
+        top: 0;
+        padding: 20px 0;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      border-radius: 2px;
+      background: black;
+      color: white;
+      border: none;
+      letter-spacing: 1px;
+    }
+  }
+}

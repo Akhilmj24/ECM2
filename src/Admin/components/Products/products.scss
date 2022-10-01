@@ -1,0 +1,113 @@
+.allProductConatiner {
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  tr {
+    border-style: none !important;
+    margin-top: 20px !important;
+  }
+  table {
+    th,
+    td {
+      color: var(--theme-color);
+      button {
+        background: transparent;
+        padding: 0;
+        border: none;
+        margin: 0;
+        margin-right: 10px;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+.addproductConatiner {
+  position: relative;
+  height: 430px;
+  h4 {
+    color: var(--theme-color);
+    margin-bottom: 5px;
+  }
+  label {
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+  }
+  .p-dropdown,
+  .p-inputtext {
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    border-radius: 1px;
+    margin-top: 50px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .imgupload {
+    margin-top: 20px;
+    display: flex;
+
+    label {
+      margin-right: 20px;
+      color: #4a6dce;
+      background-color: white;
+      cursor: pointer;
+      user-select: none;
+      width: 100%;
+      max-width: 300px;
+      // border: 2px solid #4a6dce;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      // box-shadow: 0 2px 4px 2px #e6f1faee;
+      transition: background-color 0.3s;
+      .placeholder {
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .icon {
+        fill: currentcolor;
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+
+      &:hover {
+        background-color: #f8f8f8;
+      }
+    }
+  }
+}
+
+.dialog-demo {
+  margin-top: 50px;
+}
+.dialog-demo .p-button {
+  margin: 0 0.5rem 0 0;
+  min-width: 5rem;
+}
+
+.dialog-demo p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dialog-demo .p-dialog .p-button {
+  min-width: 6rem;
+}

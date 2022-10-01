@@ -1,0 +1,118 @@
+@import "../DashBoard/dashBoard.scss";
+.featureConatiner {
+  height: 70vh;
+  .featureSection{
+     display: flex;
+    flex-wrap: wrap;
+  }
+  .barndConatiner {
+    border: 1px solid gainsboro;
+    width: 32%;
+    padding: 10px 20px;
+    border-radius: 2px;
+   margin: 5px; 
+   .headingsection{
+    text-transform: uppercase;
+   }
+    input {
+      margin: 5px 0;
+      padding: 2px;
+      width: 100%;
+    }
+    button {
+      background-color: black;
+      border-radius: 1px;
+      margin-top: 20px;
+      border: none;
+      width: 100%;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    p {
+      margin: 5px;
+      text-align: end;
+      cursor: pointer;
+      transition: 0.1s ease-in-out;
+      font-size: 12px;
+      &:hover {
+        font-size: 15px;
+        color: rgb(63, 183, 223);
+      }
+    }
+    .imgupload {
+      margin-top: 20px;
+      display: flex;
+      width: 100%;
+
+      label {
+        // margin-right: 20px;
+        color: #4a6dce;
+        background-color: white;
+        cursor: pointer;
+        user-select: none;
+        width: 100%;
+        max-width: 300px;
+        // border: 2px solid #4a6dce;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        // box-shadow: 0 2px 4px 2px #e6f1faee;
+        transition: background-color 0.3s;
+        .placeholder {
+          color: black;
+          background-color: transparent;
+          cursor: pointer;
+        }
+        .icon {
+          fill: currentcolor;
+          display: inline-block;
+          margin-right: 1rem;
+        }
+
+        input[type="file"] {
+          display: none;
+        }
+
+        &:hover {
+          background-color: #f8f8f8;
+        }
+      }
+    }
+  }
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none !important;
+}
+.brandTable {
+  th,
+  td {
+    // color: var(--theme-color);
+    button {
+      background: transparent;
+      padding: 0;
+      border: none;
+      margin: 0;
+      margin-right: 10px;
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: black;
+      }
+    }
+    // .img {
+    //   width: 20px;
+    //   height: 20px;
+    //   border-radius: 50%;
+    //   cursor: pointer;
+    // }
+  }
+}

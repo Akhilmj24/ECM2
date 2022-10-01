@@ -1,0 +1,228 @@
+.productcard_container {
+  height: 350px;
+  width: 230px;
+  background-color: rgba(252, 252, 252, 0.685);
+  margin: 15px;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border: 0.5px solid rgba(0, 0, 0, 0.178);
+  box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.81);
+  transition: all 0.2s ease-in-out;
+  font-family: Edensor;
+  letter-spacing: 1px;
+  &:hover {
+    box-shadow: 2px 2px 8px -2px rgba(0, 0, 0, 0.81);
+  }
+  .addtoCart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 0.3rem;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+    background: transparent;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .addtoWish {
+    top: 45px;
+    right: 10px;
+  }
+  .imgProduct {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    position: relative;
+    .buyNOW {
+      position: absolute;
+      bottom: 0%;
+      left: 1%;
+
+      // display: none;
+      button {
+        background: #000000;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        width: 200%;
+        font-family: Edensor;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px;
+        letter-spacing: 1px;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    
+  }
+  .productContent {
+    padding: 0 10px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.877);
+    h3 {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    h1 {
+      font-size: 24px !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .productPrice {
+      font-size: 18px;
+      margin-bottom: 10px;
+      .offerStrike {
+        font-size: 14px;
+        margin-left: 5px;
+        text-decoration: line-through;
+        color: rgb(131, 131, 131);
+      }
+    }
+
+    .wishList {
+      position: absolute;
+      bottom: 0;
+      right: 8px;
+      .pi-heart-fill {
+        color: rgba(230, 4, 4, 0.863);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: rgba(255, 0, 0, 0.466);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .Carousel {
+    justify-content: center;
+    align-items: center;
+  }
+  .carouselSection {
+    .Ccard {
+      width: 165px;
+      height: 200px;
+      margin-bottom: 10px;
+      .imgConatainer {
+        height: 120px;
+      }
+      .detailsConatiner {
+        height: 100px;
+        bottom: 10px;
+      }
+    }
+  }
+  .Product_Card {
+    height: 130px;
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 8px 8px;
+    border-radius: 0.5rem;
+    .image_conatiner_card {
+      top: 5px !important;
+      height: 95px !important;
+    }
+    .details_conatiner {
+      height: 130px;
+      top: 0px !important;
+      width: 100%;
+      .content {
+        position: absolute;
+        bottom: -5px;
+        left: 2px;
+        color: rgba(0, 0, 0, 0.904);
+        h4 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .productcard_container {
+    height: 250px;
+    width: 135px;
+
+    .addtoCart {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      height: 25px;
+      width: 25px;
+    }
+    .addtoWish {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      height: 25px;
+      width: 25px;
+    }
+    .imgProduct {
+      width: 135px;
+      height: 130px;
+    }
+    .productContent {
+      padding: 0 10px;
+      position: relative;
+      color: rgba(0, 0, 0, 0.877);
+      h3 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+      }
+      .productPrice {
+        font-size: 12px;
+        margin-bottom: 10px;
+        .offerStrike {
+          font-size: 10px;
+          margin-left: 5px;
+          text-decoration: line-through;
+          color: rgb(131, 131, 131);
+        }
+      }
+
+      .wishList {
+        position: absolute;
+        bottom: 0;
+        right: 8px;
+        .pi-heart-fill {
+          color: rgba(230, 4, 4, 0.863);
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: rgba(255, 0, 0, 0.466);
+          }
+        }
+      }
+    }
+  }
+}

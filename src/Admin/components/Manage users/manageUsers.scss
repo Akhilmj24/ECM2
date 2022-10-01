@@ -1,0 +1,33 @@
+.manageUsersConatiner {
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  tr {
+    border-style: none !important;
+  }
+  table {
+    th,
+    td {
+      color: var(--theme-color);
+      button {
+        background: transparent;
+        padding: 0;
+        border: none;
+        margin: 0;
+        margin-right: 10px;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+}

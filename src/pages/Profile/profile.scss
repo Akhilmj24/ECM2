@@ -1,0 +1,192 @@
+.profileConatiner {
+  background-color: rgba(252, 252, 252, 0.966);
+  //   background: red;
+  height: 100vh;
+  width: 40%;
+  position: fixed;
+  z-index: 1000;
+  right: -800px;
+  transition: 0.8s ease-in-out;
+  font-family: Edensor;
+  .headProfile {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+    width: 60%;
+    .back {
+      padding-left: 10px;
+      svg {
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    h1 {
+      font-family: WilliamNarasi;
+    }
+  }
+  .profileDetails {
+    .profileimgConatiner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .imgSection {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: lavender;
+        letter-spacing: 1px;
+        font-size: 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        position: relative;
+        .updateImage {
+          width: 140px;
+          height: 40px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.233);
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          input {
+            position: absolute;
+            cursor: pointer !important;
+            width: 140px;
+            height: 40px;
+            opacity: 0;
+          }
+          svg {
+            margin-top: 8px;
+            cursor: pointer;
+            fill: white;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .profileUserDeatils {
+      padding: 0 2rem;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      .addressProfile {
+        text-align: end;
+        small {
+          color: rgb(40, 91, 231);
+          font-size: 15px;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            border-bottom: 1px solid rgb(40, 91, 231);
+          }
+        }
+      }
+      .editProfile {
+        margin-top: 30px;
+        color: rgb(40, 91, 231);
+        p {
+          font-size: 18px;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            transform: translateX(20px);
+          }
+        }
+      }
+    }
+  }
+}
+.profileActive {
+  right: 0px;
+}
+.editConatiner {
+  height: 65vh;
+  position: relative;
+
+  .editformConatiner {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    margin: 10px !important;
+    width: 80%;
+
+    label {
+      margin-bottom: 5px;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  .editBtn {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    button {
+      border-radius: 2px;
+      background: black;
+      border: none;
+      margin: 5px;
+      font-family: Edensor;
+      letter-spacing: 3px;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      margin: 5px;
+      font-family: Edensor;
+      letter-spacing: 3px;
+      font-size: 18px;
+      color: black;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
+
+.allAddressConatiner {
+  table {
+    th,
+    td {
+      button {
+        background: transparent;
+        padding: 0;
+        border: none;
+        margin: 0;
+        margin-right: 10px;
+        svg {
+          width: 24px;
+          height: 24px;
+          path {
+            fill: black;
+          }
+        }
+      }
+    }
+  }
+  .addnewAddress{
+    color: rgb(6, 80, 218);
+    letter-spacing: 1px;
+    cursor: pointer;
+    &:hover{
+      font-size: 18px;
+    }
+  }
+}
